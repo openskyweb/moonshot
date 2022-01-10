@@ -1,4 +1,4 @@
-# Moonish
+# Moonshot
 Beaver Theme Child Theme
 
 ## Screenshot Credit
