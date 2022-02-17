@@ -1,0 +1,66 @@
+/* Styling for Print */
+/* Use printonly or noprint classes to hide/show sections for print */
+
+.printonly {
+	display: none;
+}
+
+@media print {
+	/* Override Classes */
+	.noprint {
+		display: none;
+	}
+
+	.printonly {
+		display: block;
+	}
+
+	/* Column Override Settings */
+	.fl-col {
+		clear: unset;
+		margin-left: 0;
+		margin-right: 0;
+		float: left;
+		width: 100% !important;
+	}
+
+	.fl-col-small:not(.fl-col-small-full-width) {
+		max-width: unset;
+	}
+
+	.fl-col-group.fl-col-group-equal-height {
+		display: flex;
+	}
+
+	.fl-col-group.fl-col-group-responsive-reversed .fl-col {
+		-webkit-box-flex: 1 1 auto;
+		-moz-box-flex: 1 1 auto;
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+		min-width: unset;
+		-webkit-box-ordinal-group: unset !important;
+		-moz-box-ordinal-group: unset !important;
+		-ms-flex-order: unset !important;
+		-webkit-order: unset !important;
+		order: unset !important;
+	}
+
+	/* Sitewide Styling */
+	body {
+		font-size: 12pt;
+		line-height: 1.5;
+	}
+
+	p {
+		margin-bottom: 1em;
+	}
+
+	h1 {
+		font-size: 18pt !important;
+	}
+
+	h2, h3,	h4,	h5,	h6 {
+		font-size: 16pt !important;
+	}
+}
