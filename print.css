@@ -70,6 +70,10 @@
 		font-size: 12pt !important;
 	}
 
+	a[href]:after {
+		content: "";
+	}
+
 	.fl-row-content-wrap {
 		padding: 20px;
 	}
