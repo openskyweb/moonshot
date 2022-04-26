@@ -8,9 +8,64 @@ Author URI: http://www.openskywebstudio.com
 Template: bb-theme
 */
 
-/* Fix on Mobile for columns */
+/* Hide Outline */
+:focus-visible {
+	outline: none;
+}
+
+/* Mobile Columns Set to Full Width */
 @media (max-width: 768px) {
 	.fl-col-small:not(.fl-col-small-full-width) {
 		max-width: none !important;
 	}
+}
+
+/* Flex Columns Classes */
+.flex_col_right .fl-col-content {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.flex_col_left .fl-col-content {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.flex_col_split .fl-col-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media (max-width: 768px) {
+	.flex_col_right .fl-col-content {
+		justify-content: space-around;
+	}
+}
+
+/* Add Local Font */
+/*
+@font-face {
+	font-family: 'Marydale';
+	src:
+		url('fonts/marydale-webfont.woff2') format('woff2'),
+		url('fonts/marydale-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+*/
+
+/* Tables */
+table {
+    width: 100%;
+    border: 1px solid #f5f5f5;
+    margin: 20px 0;
+}
+
+td, th {
+    padding: 5px;
+}
+
+tr {
+    border: 1px solid #f5f5f5;
 }
