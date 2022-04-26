@@ -20,6 +20,13 @@ Template: bb-theme
 	}
 }
 
+@media (max-width: 768px) {
+	.fl-module>.fl-module-content {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
 /* Flex Columns Classes */
 .flex_col_right .fl-col-content {
 	display: flex;
