@@ -1,26 +1,29 @@
-.printonly {
-	display: none;
+body:not(.fl-builder-edit) .printonly {
+        display: none;
 }
 
 @media print {
 
-	/* Override Classes */
-	.noprint {
-		display: none;
-	}
-
-	.printonly {
-		display: block;
-	}
+        /* Override Classes */
+        .fl-col-group-equal-height .fl-col.noprint,
+        .noprint {
+                display: none;
+        }
+        
+        body:not(.fl-builder-edit) .printonly {
+                display: block;
+        }
 
 	/* Column Override Settings */
-	.fl-col {
-		clear: unset;
-		margin-left: 0;
-		margin-right: 0;
-		float: left;
-		width: 100% !important;
-	}
+        .fl-col {
+                clear: unset;
+                margin-left: 0;
+                margin-right: 0;
+                float: left;
+                width: 100% !important;
+                -webkit-print-color-adjust: exact !important;   /* Chrome, Safari, Edge */
+                color-adjust: exact !important;                 /*Firefox*/
+        }
 
 	.fl-col-small:not(.fl-col-small-full-width) {
 		max-width: unset;
