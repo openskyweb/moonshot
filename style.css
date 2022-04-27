@@ -50,6 +50,55 @@ Template: bb-theme
 	}
 }
 
+/* Buttons */
+.fl-page button:visited,
+.fl-responsive-preview-content button:visited,
+.fl-button-lightbox-content button:visited,
+.fl-page input[type=button],
+.fl-responsive-preview-content input[type=button],
+.fl-button-lightbox-content input[type=button],
+.fl-page input[type=submit],
+.fl-responsive-preview-content input[type=submit],
+.fl-button-lightbox-content input[type=submit],
+.fl-page a.fl-button,
+.fl-responsive-preview-content a.fl-button,
+.fl-button-lightbox-content a.fl-button,
+.fl-page a.fl-button:visited,
+.fl-responsive-preview-content a.fl-button:visited,
+.fl-button-lightbox-content a.fl-button:visited,
+.fl-page a.button,
+.fl-responsive-preview-content a.button,
+.fl-button-lightbox-content a.button,
+.fl-page a.button:visited,
+.fl-responsive-preview-content a.button:visited,
+.fl-button-lightbox-content a.button:visited,
+.fl-page button.button,
+.fl-responsive-preview-content button.button,
+.fl-button-lightbox-content button.button,
+.fl-page button.button:visited,
+.fl-responsive-preview-content button.button:visited,
+.fl-button-lightbox-content button.button:visited,
+.fl-page .fl-page-nav-toggle-button .fl-page-nav .navbar-toggle,
+.fl-responsive-preview-content .fl-page-nav-toggle-button .fl-page-nav .navbar-toggle,
+.fl-button-lightbox-content .fl-page-nav-toggle-button .fl-page-nav .navbar-toggle,
+.fl-page .fl-page-nav-toggle-button .fl-page-nav .navbar-toggle:visited,
+.fl-responsive-preview-content .fl-page-nav-toggle-button .fl-page-nav .navbar-toggle:visited,
+.fl-button-lightbox-content .fl-page-nav-toggle-button .fl-page-nav .navbar-toggle:visited {
+	padding: 12px 20px;
+    white-space: nowrap;
+}
+@media (max-width: 768px) {
+	.fl-button-group-button {
+		width: 100%;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+
+	.fl-button-group-button .fl-button-wrap {
+		display: block;
+	}
+}
+
 /* Add Local Font */
 /*
 @font-face {
