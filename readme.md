@@ -10,6 +10,13 @@ Beaver Theme Child Theme
 - 1024
 - 768
 
+- max-width: 1366
+- max-width: 1023
+- max-width: 767
+
+- min-width: 1024
+- min-width: 768
+
 ### Font Sizes
 Desktop:
 - h1 44
