@@ -50,6 +50,16 @@ Template: bb-theme
 	}
 }
 
+/* Half Column Restriction - Use for full width content and restricting one side. */
+.restrict-half-col-right .fl-col-content > .fl-module {
+        max-width: 683px;
+        margin-right: auto;
+}
+.restrict-half-col-left .fl-col-content > .fl-module {
+        max-width: 683px;
+        margin-left: auto;
+}
+
 /* Buttons */
 .fl-page button:visited,
 .fl-responsive-preview-content button:visited,
@@ -85,7 +95,7 @@ Template: bb-theme
 .fl-responsive-preview-content .fl-page-nav-toggle-button .fl-page-nav .navbar-toggle:visited,
 .fl-button-lightbox-content .fl-page-nav-toggle-button .fl-page-nav .navbar-toggle:visited {
 	padding: 12px 20px;
-    white-space: nowrap;
+	white-space: nowrap;
 }
 @media (max-width: 768px) {
 	.fl-button-group-button {
